@@ -1,10 +1,11 @@
 # Maths Atlas Content
 
-[Maths Atlas Engine](https://github.com/philippklinz/maths-atlas-engine) liest diesen statischen, deutschsprachigen Geometrie-Bestand. `atlas.json` enthält sechs Einträge, deren Formeln, Beweise und Belegstellen. Die Zeichnung liegt unter `abbildungen/`.
+[Maths Atlas Engine](https://github.com/philippklinz/maths-atlas-engine) liest diesen statischen, deutschsprachigen Bestand. `atlas.json` enthält die Gebiete Geometrie und Algebra sowie sechs Einträge mit ihren Formeln, Beweisen und Belegstellen. Die Zeichnung liegt unter `abbildungen/`.
 
 ## Einen Eintrag ergänzen
 
 - `id` bleibt dauerhaft gleich. `title`, `kind` und `summary` sind der sichtbare Titel, die Art des Eintrags und seine eigenständig verständliche Aussage.
+- `areas` beschreibt die Gebiete mit ihren `topics`. Jedes Gebiet und Thema hat eine stabile ID, einen Titel und einen kurzen Überblick. Themen-IDs sind atlasweit eindeutig. Jeder Eintrag nennt seine Themen-ID in `topic`. Daraus entstehen Startseite, Verzeichnis und Themenfilter. Fachliche Verknüpfungen können in andere Gebiete führen.
 - In `formula` stehen Textstücke und optional verknüpfte Symbole wie `{"text":"h","ref":"hypotenusenhoehe"}`. `ref` bezeichnet die ID des erklärenden Eintrags.
 - `proofs` enthält beliebig viele Beweise mit eigenen IDs und Titeln. Jeder Schritt hat eine stabile `id`, einen `title`, einen Erklärungstext in `body` und optional eine `formula`. `uses` nennt die IDs der genau hier verwendeten Hilfssätze oder Begriffe.
 - Die Engine bildet Rückverweise aus diesen Angaben. Ändert sich die Reihenfolge der Schritte, bleibt der Link über die Schritt-ID gültig. IDs bestehen aus Kleinbuchstaben, Ziffern und Bindestrichen.

@@ -3,6 +3,28 @@
   "language": "de",
   "chapter": "Geometrie",
   "start": "hoehensatz",
+  "areas": [
+    {
+      "id": "algebra",
+      "title": "Algebra",
+      "summary": "Verhältnisse vergleichen und Gleichungen mit Brüchen umformen.",
+      "topics": [{
+        "id": "verhaeltnisse-und-gleichungen",
+        "title": "Verhältnisse und Gleichungen",
+        "summary": "Wie du zwei Verhältnisse gleichsetzt und mit Kreuzprodukten weiterrechnest."
+      }]
+    },
+    {
+      "id": "geometrie",
+      "title": "Geometrie",
+      "summary": "Höhen, Winkel und Seiten im rechtwinkligen Dreieck erkunden, vom Höhensatz bis zum Satz des Pythagoras.",
+      "topics": [{
+        "id": "rechtwinklige-dreiecke",
+        "title": "Rechtwinklige Dreiecke",
+        "summary": "Wie die Höhe auf die Hypotenuse ähnliche Dreiecke erzeugt und ihre Seitenlängen miteinander verbindet."
+      }]
+    }
+  ],
   "figures": {
     "dreieck-mit-hoehe": {
       "src": "abbildungen/hypotenusenhoehe.svg",
@@ -15,6 +37,7 @@
   "entries": [
     {
       "id": "hoehensatz",
+      "topic": "rechtwinklige-dreiecke",
       "kind": "Satz",
       "title": "Höhensatz",
       "summary": "Zieht man im rechtwinkligen Dreieck die Höhe auf die Hypotenuse, dann ist das Quadrat ihrer Länge gleich dem Produkt der beiden Hypotenusenabschnitte.",
@@ -34,6 +57,7 @@
     },
     {
       "id": "kathetensatz",
+      "topic": "rechtwinklige-dreiecke",
       "kind": "Satz",
       "title": "Kathetensatz",
       "summary": "Das Quadrat jeder Kathete ist gleich dem Produkt aus der Hypotenuse und dem an dieser Kathete liegenden Hypotenusenabschnitt.",
@@ -53,6 +77,7 @@
     },
     {
       "id":"aehnlichkeitslemma",
+      "topic":"rechtwinklige-dreiecke",
       "kind":"Lemma",
       "title":"Ähnlichkeitslemma",
       "summary":"Die Höhe auf die Hypotenuse teilt ein rechtwinkliges Dreieck in zwei kleinere Dreiecke. Beide sind zum ursprünglichen Dreieck und deshalb auch zueinander ähnlich.",
@@ -71,6 +96,7 @@
     },
     {
       "id":"hypotenusenhoehe",
+      "topic":"rechtwinklige-dreiecke",
       "kind":"Begriff",
       "title":"Höhe auf die Hypotenuse",
       "summary":"Die Hypotenuse liegt dem rechten Winkel gegenüber. Das Lot vom Scheitel dieses Winkels trifft die Hypotenuse im Höhenfußpunkt H. Seine Länge heißt h.",
@@ -81,6 +107,7 @@
     },
     {
       "id":"verhaeltnisgleichung",
+      "topic":"verhaeltnisse-und-gleichungen",
       "kind":"Rechenregel",
       "title":"Verhältnisgleichung",
       "summary":"Zwei Verhältnisse sind gleich, wenn ihre Kreuzprodukte übereinstimmen. Die beiden Nenner müssen von null verschieden sein.",
@@ -98,6 +125,7 @@
     },
     {
       "id":"pythagoras",
+      "topic":"rechtwinklige-dreiecke",
       "kind":"Satz",
       "title":"Satz des Pythagoras",
       "summary":"In jedem rechtwinkligen Dreieck ist die Summe der beiden Kathetenquadrate gleich dem Quadrat der Hypotenuse.",

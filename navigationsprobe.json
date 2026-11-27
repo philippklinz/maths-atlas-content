@@ -1,4 +1,5 @@
 {"version": 1,
+ "topic": "rechtwinklige-dreiecke",
  "entries": [
   {"id": "beispiel-hoehe-1", "kind": "Beispiel", "title": "Ähnliche Dreiecke bei h = 1 cm", "summary": "Für q = 1 cm und p = 1 cm ist die Höhe 1 cm lang. Die beiden Teildreiecke haben nach dem Ähnlichkeitslemma dasselbe Verhältnis q / h = h / p.", "formula": ["1 / 1 = 1 / 1"], "links": [{"to": "aehnlichkeitslemma", "relation": "example"}]},
   {"id": "beispiel-hoehe-2", "kind": "Beispiel", "title": "Ähnliche Dreiecke bei h = 2 cm", "summary": "Für q = 1 cm und p = 4 cm ist die Höhe 2 cm lang. Die beiden Teildreiecke haben nach dem Ähnlichkeitslemma dasselbe Verhältnis q / h = h / p.", "formula": ["1 / 2 = 2 / 4"], "links": [{"to": "aehnlichkeitslemma", "relation": "example"}]},
