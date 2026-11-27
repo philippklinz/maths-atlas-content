@@ -1,6 +1,12 @@
 # Maths Atlas Content
 
-[Maths Atlas Engine](https://github.com/philippklinz/maths-atlas-engine) liest diesen statischen, deutschsprachigen Bestand. `atlas.json` enthält die Gebiete Geometrie und Algebra sowie sechs Einträge mit ihren Formeln, Beweisen und Belegstellen. Die Zeichnung liegt unter `abbildungen/`.
+[Maths Atlas](https://philipp-klinz.net/maths-atlas-engine/) erschließt die deutschsprachigen Einträge aus `atlas.json`. Die [Engine](https://github.com/philippklinz/maths-atlas-engine) bildet die beiden Richtungen eines fachlichen Verweises ab. Die Zeichnungen liegen unter `abbildungen/`.
+
+| Gebiet | Themen |
+| --- | --- |
+| Algebra | Terme und Wurzeln · Verhältnisse und Gleichungen |
+| Arithmetik | Brüche und Anteile · Zahlen und Konstanten |
+| Geometrie | Kreis und Winkel · Längen und Flächen · Rechtwinklige Dreiecke · Zylinder |
 
 ## Einen Eintrag ergänzen
 
@@ -14,4 +20,6 @@
 
 ## Navigationsprobe
 
-`navigationsprobe.json` ergänzt auf Wunsch 30 kurze Zahlenbeispiele zum Ähnlichkeitslemma. Die Engine lädt sie mit `?probe=30`. Ohne diesen Parameter gehören nur die sechs redaktionellen Einträge zum Verzeichnis.
+Wie kommt man von der [Kreiszahl π](https://philipp-klinz.net/maths-atlas-engine/#eintrag=pi) zum Volumen einer Dose? Welche Rechenregel erklärt beim [Kreisring](https://philipp-klinz.net/maths-atlas-engine/#eintrag=kreisring), warum die Ringbreite in der Flächenformel vorkommt? Beide Wege sind Teil des regulären Bestands.
+
+`navigationsprobe.json` ergänzt auf Wunsch 30 zusätzliche Zahlenbeispiele zum Ähnlichkeitslemma. Die Engine lädt sie mit `?probe=30`.

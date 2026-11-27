@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 228" width="400" height="228" role="img" aria-labelledby="title desc">
+  <title id="title">Netz eines geraden Zylinders</title>
+  <desc id="desc">Zwei gleich große Kreisscheiben grenzen an den rechteckigen Mantel. Seine Breite entspricht dem Kreisumfang 2πr, seine Höhe ist die Zylinderhöhe h.</desc>
+  <style>
+    .line,.guide,.accent,.thin { fill:none; stroke:#24434a; stroke-width:2; stroke-linejoin:round }
+    .guide { stroke:#657e83; stroke-width:1.2; stroke-dasharray:4 3 }
+    .thin { stroke-width:1.2 }
+    .accent { stroke:#006b65; stroke-width:2.6 }
+    .tint { fill:#c6eae2 }
+    .point { fill:#24434a }
+    text { fill:#15383e; font:17px "Liberation Sans",Arial,sans-serif; text-anchor:middle }
+    .math { font:italic 22px "Liberation Serif",Georgia,serif }
+  </style>
+  <rect width="400" height="228" fill="#f1f7f6"/>
+  <g class="tint"><circle cx="192" cy="52" r="28"/><circle cx="192" cy="176" r="28"/></g>
+  <g class="line"><circle cx="192" cy="52" r="28"/><circle cx="192" cy="176" r="28"/><rect x="104.035" y="80" width="175.93" height="68"/></g>
+  <path class="accent" d="M192 52h28"/><circle cx="192" cy="52" r="2.4" class="point"/>
+  <path class="thin" d="M105 129h174m-174-4v8m174-8v8 M306 80v68m-5-68h10m-10 68h10"/>
+  <path class="guide" d="M282 80h18m-18 68h18"/>
+  <text class="math" x="206" y="45">r</text><text class="math" x="192" y="116">U = 2πr</text><text class="math" x="323" y="120">h</text>
+</svg>

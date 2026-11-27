@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 244" width="400" height="244" role="img" aria-labelledby="title desc">
+  <title id="title">Radius, Durchmesser und Umfang</title>
+  <desc id="desc">Eine Strecke d durchquert den Mittelpunkt M. Eine zweite Strecke r reicht vom Mittelpunkt bis zur Kreislinie. Ein Hinweis U zeigt auf den Umfang.</desc>
+  <style>
+    .line,.guide,.accent,.thin { fill:none; stroke:#24434a; stroke-width:2; stroke-linejoin:round }
+    .guide { stroke:#657e83; stroke-width:1.2; stroke-dasharray:4 3 }
+    .thin { stroke-width:1.2 }
+    .accent { stroke:#006b65; stroke-width:2.6 }
+    .tint { fill:#c6eae2 }
+    .point { fill:#24434a }
+    text { fill:#15383e; font:17px "Liberation Sans",Arial,sans-serif; text-anchor:middle }
+    .math { font:italic 22px "Liberation Serif",Georgia,serif }
+  </style>
+  <rect width="400" height="244" fill="#f1f7f6"/>
+  <circle cx="185" cy="111" r="82" class="tint"/>
+  <circle cx="185" cy="111" r="82" class="line"/>
+  <path class="line" d="M103 111h164"/>
+  <path class="accent" d="m185 111 49.2-65.6"/>
+  <circle cx="185" cy="111" r="3.1" class="point"/>
+  <path class="guide" d="M103 116v94m164-94v94"/>
+  <path class="thin" d="M103 206h164m-164-5v10m164-10v10 M262 82l29-16h12"/>
+  <text x="172" y="133">M</text><text class="math" x="216" y="85">r</text><text class="math" x="185" y="231">d</text><text class="math" x="317" y="72">U</text>
+</svg>

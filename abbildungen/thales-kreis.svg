@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250" role="img" aria-labelledby="title desc">
+  <title id="title">Der rechte Winkel über einem Durchmesser</title>
+  <desc id="desc">A und B sind die Endpunkte des Durchmessers. Der dritte Punkt C liegt auf der Kreislinie. MC teilt den rechten Winkel bei C. MA, MB und MC sind gleich lang.</desc>
+  <style>
+    .line,.guide,.accent,.thin { fill:none; stroke:#24434a; stroke-width:2; stroke-linejoin:round }
+    .guide { stroke:#657e83; stroke-width:1.2; stroke-dasharray:4 3 }
+    .thin { stroke-width:1.2 }
+    .accent { stroke:#006b65; stroke-width:2.6 }
+    .tint { fill:#c6eae2 }
+    .point { fill:#24434a }
+    text { fill:#15383e; font:17px "Liberation Sans",Arial,sans-serif; text-anchor:middle }
+    .math { font:italic 22px "Liberation Serif",Georgia,serif }
+  </style>
+  <rect width="400" height="250" fill="#f1f7f6"/>
+  <circle cx="200" cy="130" r="100" class="line"/>
+  <path class="tint" d="m100 130 40-80 160 80Z"/>
+  <path class="line" d="m100 130 40-80 160 80Z"/>
+  <path class="accent" d="m200 130-60-80"/>
+  <path class="thin" d="m135.53 58.94 8.94 4.47 4.47-8.94"/>
+  <g class="point"><circle cx="100" cy="130" r="3"/><circle cx="300" cy="130" r="3"/><circle cx="140" cy="50" r="3"/><circle cx="200" cy="130" r="3"/></g>
+  <text x="84" y="138">A</text><text x="316" y="138">B</text><text x="129" y="39">C</text><text x="200" y="152">M</text>
+</svg>

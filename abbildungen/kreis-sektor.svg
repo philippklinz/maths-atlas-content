@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 226" width="400" height="226" role="img" aria-labelledby="title desc">
+  <title id="title">Ein Kreissektor von 120 Grad</title>
+  <desc id="desc">Ein gefärbter Sektor umfasst ein Drittel der Kreisscheibe. Zwei Radien und der hervorgehobene Bogen s begrenzen ihn.</desc>
+  <style>
+    .line,.guide,.accent,.thin { fill:none; stroke:#24434a; stroke-width:2; stroke-linejoin:round }
+    .guide { stroke:#657e83; stroke-width:1.2; stroke-dasharray:4 3 }
+    .thin { stroke-width:1.2 }
+    .accent { stroke:#006b65; stroke-width:2.6 }
+    .tint { fill:#c6eae2 }
+    .point { fill:#24434a }
+    text { fill:#15383e; font:17px "Liberation Sans",Arial,sans-serif; text-anchor:middle }
+    .math { font:italic 22px "Liberation Serif",Georgia,serif }
+  </style>
+  <rect width="400" height="226" fill="#f1f7f6"/>
+  <circle cx="183" cy="111" r="82" class="line"/>
+  <path d="M183 111h82a82 82 0 0 0-123-71.014Z" class="tint"/>
+  <path d="M265 111a82 82 0 0 0-123-71.014" class="accent"/>
+  <path d="M265 111h-82l-41-71.014" class="line"/>
+  <path d="M205 111a22 22 0 0 0-33-19.053" class="thin"/>
+  <circle cx="183" cy="111" r="3" class="point"/>
+  <text x="205" y="83">120°</text><text class="math" x="227" y="135">r</text><text x="170" y="133">M</text>
+  <path class="guide" d="m236 49 38-18h15"/><text class="math" x="302" y="36">s</text>
+</svg>

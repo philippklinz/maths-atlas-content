@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160" role="img" aria-labelledby="title desc">
+  <title id="title">Drei Viertel und neun Zwölftel</title>
+  <desc id="desc">Zwei gleich lange Streifen sind bis zur gleichen Stelle gefärbt. Der obere ist in vier, der untere in zwölf gleich große Teile geteilt.</desc>
+  <style>
+    .line,.guide,.accent,.thin { fill:none; stroke:#24434a; stroke-width:2; stroke-linejoin:round }
+    .guide { stroke:#657e83; stroke-width:1.2; stroke-dasharray:4 3 }
+    .thin { stroke-width:1.2 }
+    .accent { stroke:#006b65; stroke-width:2.6 }
+    .tint { fill:#c6eae2 }
+    .point { fill:#24434a }
+    text { fill:#15383e; font:17px "Liberation Sans",Arial,sans-serif; text-anchor:middle }
+    .math { font:italic 22px "Liberation Serif",Georgia,serif }
+  </style>
+  <rect width="400" height="160" fill="#f1f7f6"/>
+  <g class="tint"><rect x="43" y="27" width="216" height="32"/><rect x="43" y="98" width="216" height="32"/></g>
+  <g class="line"><rect x="43" y="27" width="288" height="32"/><rect x="43" y="98" width="288" height="32"/></g>
+  <path class="thin" d="M115 27v32m72-32v32m72-32v32 M67 98v32m24-32v32m24-32v32m24-32v32m24-32v32m24-32v32m24-32v32m24-32v32m24-32v32m24-32v32m24-32v32"/>
+  <path class="guide" d="M259 59v39"/>
+  <text x="363" y="49">3/4</text><text x="363" y="120">9/12</text>
+</svg>

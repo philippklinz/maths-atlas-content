@@ -1,28 +1,69 @@
 {
   "version": 1,
   "language": "de",
-  "chapter": "Geometrie",
+  "chapter": "Mathematik",
   "start": "hoehensatz",
   "areas": [
     {
       "id": "algebra",
       "title": "Algebra",
-      "summary": "Verhältnisse vergleichen und Gleichungen mit Brüchen umformen.",
-      "topics": [{
-        "id": "verhaeltnisse-und-gleichungen",
-        "title": "Verhältnisse und Gleichungen",
-        "summary": "Wie du zwei Verhältnisse gleichsetzt und mit Kreuzprodukten weiterrechnest."
-      }]
+      "summary": "Verhältnisse und Gleichungen umformen, Klammern ausmultiplizieren und Wurzeln ziehen.",
+      "topics": [
+        {
+          "id": "verhaeltnisse-und-gleichungen",
+          "title": "Verhältnisse und Gleichungen",
+          "summary": "Vom konstanten Verhältnis über den Dreisatz zur Gleichung mit zwei Brüchen."
+        },
+        {
+          "id": "terme-und-wurzeln",
+          "title": "Terme und Wurzeln",
+          "summary": "Wie man Produkte ausmultipliziert, Quadrate erkennt und aus einer Fläche eine Länge gewinnt."
+        }
+      ]
+    },
+    {
+      "id": "arithmetik",
+      "title": "Arithmetik",
+      "summary": "Brüche und Prozente als Anteile verstehen und Zahlen wie π und √2 auf ihre Eigenschaften untersuchen.",
+      "topics": [
+        {
+          "id": "brueche-und-anteile",
+          "title": "Brüche und Anteile",
+          "summary": "Gleich große Anteile vergleichen, addieren und in Hundertsteln ausdrücken."
+        },
+        {
+          "id": "zahlen-und-konstanten",
+          "title": "Zahlen und Konstanten",
+          "summary": "Welche Zahlen als Bruch darstellbar sind und wie π und √2 in geometrischen Formeln auftreten."
+        }
+      ]
     },
     {
       "id": "geometrie",
       "title": "Geometrie",
-      "summary": "Höhen, Winkel und Seiten im rechtwinkligen Dreieck erkunden, vom Höhensatz bis zum Satz des Pythagoras.",
-      "topics": [{
-        "id": "rechtwinklige-dreiecke",
-        "title": "Rechtwinklige Dreiecke",
-        "summary": "Wie die Höhe auf die Hypotenuse ähnliche Dreiecke erzeugt und ihre Seitenlängen miteinander verbindet."
-      }]
+      "summary": "Längen, Flächen, Winkel und Volumina bestimmen – vom rechtwinkligen Dreieck bis zum Zylinder.",
+      "topics": [
+        {
+          "id": "rechtwinklige-dreiecke",
+          "title": "Rechtwinklige Dreiecke",
+          "summary": "Wie die Höhe auf die Hypotenuse ähnliche Dreiecke erzeugt und ihre Seitenlängen miteinander verbindet."
+        },
+        {
+          "id": "kreis-und-winkel",
+          "title": "Kreis und Winkel",
+          "summary": "Wie Radius, Umfang und Fläche zusammenhängen und welchen Anteil ein Winkel ausschneidet."
+        },
+        {
+          "id": "laengen-und-flaechen",
+          "title": "Längen und Flächen",
+          "summary": "Rechtecke und Dreiecke zerlegen und die Länge einer Quadratdiagonale bestimmen."
+        },
+        {
+          "id": "zylinder",
+          "title": "Zylinder",
+          "summary": "Was die Grundfläche, das abgerollte Etikett und der Rauminhalt einer Dose gemeinsam haben."
+        }
+      ]
     }
   ],
   "figures": {
@@ -32,6 +73,55 @@
       "height": 248,
       "alt": "Rechtwinkliges Dreieck ABC. Von C fällt die Höhe h auf den Punkt H der Hypotenuse AB. Links liegt AH = q, rechts HB = p. Die Katheten sind AC = b und BC = a.",
       "caption": "H teilt die Hypotenuse c in die Abschnitte q und p."
+    },
+    "bruchstreifen": {
+      "src": "abbildungen/bruchstreifen.svg",
+      "width": 400,
+      "height": 160,
+      "alt": "Zwei gleich lange Streifen. Oben sind drei von vier Teilen gefärbt, unten neun von zwölf. Beide farbigen Abschnitte enden an derselben Linie.",
+      "caption": "Drei Viertel und neun Zwölftel bedecken dieselbe Länge."
+    },
+    "kreis-masse": {
+      "src": "abbildungen/kreis-masse.svg",
+      "width": 400,
+      "height": 244,
+      "alt": "Durchmesser d quer durch den Mittelpunkt M. Radius r reicht von M zur Kreislinie, U bezeichnet die Länge der Kreislinie.",
+      "caption": "Der Radius reicht bis zum Rand, der Durchmesser von Rand zu Rand durch M."
+    },
+    "kreis-sektor": {
+      "src": "abbildungen/kreis-sektor.svg",
+      "width": 400,
+      "height": 226,
+      "alt": "Ein Sektor von 120° nimmt ein Drittel der Kreisscheibe ein. Zwei Radien und der Bogen s begrenzen den gefärbten Teil.",
+      "caption": "120° schneiden ein Drittel der Kreislinie und ein Drittel der Fläche aus."
+    },
+    "quadrat-diagonale": {
+      "src": "abbildungen/quadrat-diagonale.svg",
+      "width": 400,
+      "height": 234,
+      "alt": "Die Diagonale d halbiert ein Quadrat. Zwei angrenzende Seiten der Länge a treffen sich im rechten Winkel.",
+      "caption": "Die beiden Katheten des halben Quadrats sind gleich lang."
+    },
+    "kreisring": {
+      "src": "abbildungen/kreisring.svg",
+      "width": 400,
+      "height": 228,
+      "alt": "Zwei konzentrische Kreise mit den Radien R und r. Die Länge des markierten Teilstücks zwischen den Kreislinien ist R − r.",
+      "caption": "Die Breite wird radial von der Lochkante zum Außenrand gemessen."
+    },
+    "thales-kreis": {
+      "src": "abbildungen/thales-kreis.svg",
+      "width": 400,
+      "height": 250,
+      "alt": "A und B liegen an den Enden eines Durchmessers mit Mittelpunkt M. MC verbindet M mit dem dritten Punkt C auf dem Kreis. Der rechte Winkel bei C ist markiert.",
+      "caption": "MC zerlegt das Dreieck ABC in zwei gleichschenklige Dreiecke."
+    },
+    "zylinder-netz": {
+      "src": "abbildungen/zylinder-netz.svg",
+      "width": 400,
+      "height": 228,
+      "alt": "Zwei Kreisscheiben mit Radius r und das rechteckige Mantelstück sind als Netz angeordnet. Die Breite des Rechtecks ist 2πr und seine Höhe h.",
+      "caption": "Das Etikett bildet das Rechteck, Boden und Deckel bilden die Kreisscheiben."
     }
   },
   "entries": [
@@ -124,23 +214,565 @@
       "sources":[{"label":"Euklid, Elemente VI.16 (geometrische Fassung)", "url":"https://mathcs.clarku.edu/~djoyce/java/elements/bookVI/propVI16.html"}]
     },
     {
-      "id":"pythagoras",
-      "topic":"rechtwinklige-dreiecke",
-      "kind":"Satz",
-      "title":"Satz des Pythagoras",
-      "summary":"In jedem rechtwinkligen Dreieck ist die Summe der beiden Kathetenquadrate gleich dem Quadrat der Hypotenuse.",
-      "formula":["a² + b² = c²"],
-      "figure":"dreieck-mit-hoehe",
-      "proofs":[{
-        "id":"kathetenquadrate",
-        "title":"Beweis mit dem Kathetensatz",
-        "steps":[
-          {"id":"kathetensatz-anwenden","title":"Beide Kathetenquadrate ausdrücken","body":"Der Kathetensatz liefert a² = c · p und b² = c · q.", "uses":["kathetensatz"]},
-          {"id":"addieren","title":"Addieren und ausklammern","body":"Addiere beide Gleichungen. Die Abschnitte p und q bilden zusammen die ganze Hypotenuse c.", "formula":"a² + b² = c · (p + q) = c²", "uses":["hypotenusenhoehe"]}
-        ]
-      }],
-      "example":"Ein rechtwinkliges Dreieck mit Katheten von 3 cm und 4 cm hat eine 5 cm lange Hypotenuse. Denn 3² + 4² = 9 + 16 = 25 = 5².",
-      "sources":[{"label":"Euklid, Elemente I.47 (geometrischer Beweis)", "url":"https://mathcs.clarku.edu/~djoyce/java/elements/bookI/propI47.html"}]
+      "id": "pythagoras",
+      "topic": "rechtwinklige-dreiecke",
+      "kind": "Satz",
+      "title": "Satz des Pythagoras",
+      "summary": "In jedem rechtwinkligen Dreieck ist die Summe der beiden Kathetenquadrate gleich dem Quadrat der Hypotenuse.",
+      "formula": ["a² + b² = c²"],
+      "figure": "dreieck-mit-hoehe",
+      "proofs": [
+        {
+          "id": "kathetenquadrate",
+          "title": "Beweis mit dem Kathetensatz",
+          "steps": [
+          {"id": "kathetensatz-anwenden", "title": "Beide Kathetenquadrate ausdrücken", "body": "Der Kathetensatz liefert a² = c · p und b² = c · q.", "uses": ["kathetensatz"]},
+          {"id": "addieren", "title": "Addieren und ausklammern", "body": "Addiere beide Gleichungen. Die Abschnitte p und q bilden zusammen die ganze Hypotenuse c.", "formula": "a² + b² = c · (p + q) = c²", "uses": ["hypotenusenhoehe", "distributivgesetz"]}
+          ]
+        },
+        {
+          "id": "flaechenzerlegung",
+          "title": "Flächenbeweis mit vier Dreiecken",
+          "steps": [
+          {"id": "vier-kopien", "title": "An jede Ecke ein Dreieck legen", "body": "Zeichne ein Quadrat mit Seitenlänge a + b. Gehe am Rand im Uhrzeigersinn entlang und markiere auf jeder Seite den Punkt im Abstand a von ihrem Anfang. Verbinde benachbarte Markierungen. In jeder Ecke liegt jetzt ein rechtwinkliges Dreieck mit Katheten a und b und Hypotenuse c."},
+          {"id": "mitte", "title": "Das Quadrat in der Mitte erkennen", "body": "Der Rand der Mitte besteht aus vier Hypotenusen der Länge c. An jeder Markierung liegen die beiden spitzen Winkel der Dreiecke und ein Innenwinkel der Mitte auf einer Geraden. Die spitzen Winkel ergeben zusammen 90°, also ist der Innenwinkel ebenfalls recht."},
+          {"id": "flaechen", "title": "Die Flächen auf zwei Arten berechnen", "body": "Das äußere Quadrat hat die Fläche (a + b)². Es besteht aus dem Quadrat in der Mitte und den vier Dreiecken mit Fläche ab/2. Multipliziere links aus und ziehe auf beiden Seiten 2ab ab. Übrig bleibt a² + b² = c².", "formula": "(a + b)² = c² + 4 · ab/2", "uses": ["dreiecksflaeche", "erste-binomische-formel"]}
+          ]
+        }
+      ],
+      "example": "Ein rechtwinkliges Dreieck mit Katheten von 3 cm und 4 cm hat eine 5 cm lange Hypotenuse. Denn 3² + 4² = 9 + 16 = 25 = 5².",
+      "sources": [{"label": "Euklid, Elemente I.47 (geometrischer Beweis)", "url": "https://mathcs.clarku.edu/~djoyce/java/elements/bookI/propI47.html"}, {"label": "Serlo · Satz des Pythagoras", "url": "https://de.serlo.org/mathe/1515/satz-des-pythagoras"}]
+    },
+    {
+      "id": "bruch",
+      "topic": "brueche-und-anteile",
+      "kind": "Begriff",
+      "title": "Bruch",
+      "summary": "Ein Bruch a/b steht für die Division von a durch b. Der Bruch 3/4 beschreibt beispielsweise einen Anteil an einem Ganzen. Teile das Ganze in vier gleich große Teile und nimm drei davon.",
+      "formula": ["a / b,   b ≠ 0"],
+      "figure": "bruchstreifen",
+      "notation": [["a", "Zähler"], ["b", "Nenner"]],
+      "example": "Eine Stunde hat 60 Minuten. Drei Viertel einer Stunde entsprechen drei Abschnitten zu je 15 Minuten, also 45 Minuten.",
+      "sources": [{"label": "Serlo · Was ist ein Bruch?", "url": "https://de.serlo.org/mathe/1657/was-ist-ein-bruch"}]
+    },
+    {
+      "id": "gleichwertige-brueche",
+      "topic": "brueche-und-anteile",
+      "kind": "Rechenregel",
+      "title": "Brüche erweitern und kürzen",
+      "summary": "Multipliziert man Zähler und Nenner mit derselben ganzen Zahl k ≠ 0, bleibt der Wert des Bruchs gleich. Beim Kürzen teilt man beide durch einen gemeinsamen Teiler.",
+      "formula": [{"text": "a / b", "ref": "bruch"}, " = (k · a) / (k · b)"],
+      "figure": "bruchstreifen",
+      "proofs": [
+        {
+          "id": "faktor-eins",
+          "title": "Begründung mit dem Faktor eins",
+          "steps": [
+          {"id": "mit-eins-multiplizieren", "title": "Eins als Bruch schreiben", "body": "Für k ≠ 0 gilt k/k = 1. Multipliziert man a/b mit k/k, entstehen k · a im Zähler und k · b im Nenner. Die Division von Zähler und Nenner durch k macht den Schritt rückgängig.", "uses": ["bruch"]}
+          ]
+        }
+      ],
+      "example": "Von 12 Feldern sind 9 gefärbt. Fasse immer drei Felder zu einer Gruppe zusammen. Aus 9/12 werden 3/4, die gefärbte Länge bleibt gleich.",
+      "sources": [{"label": "Serlo · Brüche kürzen und erweitern", "url": "https://de.serlo.org/mathe/1509/brueche-kuerzen-und-erweitern"}]
+    },
+    {
+      "id": "brueche-addieren",
+      "topic": "brueche-und-anteile",
+      "kind": "Rechenregel",
+      "title": "Brüche addieren",
+      "summary": "Zwei Anteile lassen sich addieren, wenn sie sich auf dasselbe Ganze beziehen. Ein gemeinsamer Nenner macht ihre Teile gleich groß. Dann zählt man zusammen, wie viele Teile es sind.",
+      "formula": ["a/b + c/d = (ad + bc)/(bd)"],
+      "proofs": [
+        {
+          "id": "gemeinsamer-nenner",
+          "title": "Herleitung mit einem gemeinsamen Nenner",
+          "steps": [
+          {"id": "erweitern", "title": "Gleich große Teile herstellen", "body": "Für b und d ungleich null kann man den ersten Bruch mit d und den zweiten mit b erweitern. Beide haben dann den Nenner bd.", "formula": "a/b = ad/(bd)     c/d = bc/(bd)", "uses": ["gleichwertige-brueche"]},
+          {"id": "zaehlen", "title": "Die Zähler addieren", "body": "Die Anzahl der Teile addiert sich, ihre Größe bleibt gleich. Oft reicht schon ein kleinerer gemeinsamer Nenner als das Produkt bd.", "uses": ["bruch"]}
+          ]
+        }
+      ],
+      "example": "Für eine Mischung kommen 1/2 Liter und 1/3 Liter zusammen. Ein halber Liter sind drei Sechstel, ein Drittelliter sind zwei Sechstel. Zusammen ergibt das 5/6 Liter.",
+      "sources": [{"label": "Serlo · Brüche addieren und subtrahieren", "url": "https://de.serlo.org/mathe/1619/brueche-addieren-und-subtrahieren"}]
+    },
+    {
+      "id": "prozent",
+      "topic": "brueche-und-anteile",
+      "kind": "Begriff",
+      "title": "Prozent",
+      "summary": "Ein Prozent ist ein Hundertstel. Mit Prozenten kann man Anteile an verschieden großen Ganzen auf derselben Skala angeben. Für die tatsächliche Menge braucht man zusätzlich die Größe des jeweiligen Ganzen.",
+      "formula": ["p % = ", {"text": "p / 100", "ref": "bruch"}],
+      "example": "Ein Viertel sind 25/100, also 25 %. Ein Viertel von 12 Litern sind 3 Liter, ein Viertel von 40 Litern sind 10 Liter. Der Anteil ist in beiden Fällen gleich.",
+      "sources": [{"label": "Serlo · Grundwert, Prozentwert und Prozentsatz", "url": "https://de.serlo.org/mathe/36750/einfuehrung-in-grundwert-prozentwert-und-prozentsatz"}]
+    },
+    {
+      "id": "prozentwert",
+      "topic": "brueche-und-anteile",
+      "kind": "Formel",
+      "title": "Prozentwert",
+      "summary": "Der Prozentwert W ist die Menge, die einem Anteil von p Prozent am Grundwert G entspricht. W und G haben dieselbe Einheit.",
+      "formula": ["W = G · ", {"text": "(p / 100)", "ref": "prozent"}],
+      "proofs": [
+        {
+          "id": "hundertstel",
+          "title": "Herleitung über ein Prozent",
+          "steps": [
+          {"id": "ein-prozent", "title": "Ein Hundertstel bestimmen", "body": "Der Grundwert entspricht 100 %. Teile ihn durch 100, um den Wert für 1 % zu erhalten.", "uses": ["prozent"]},
+          {"id": "hochrechnen", "title": "Auf p Prozent hochrechnen", "body": "Bei festem Grundwert ist die Menge direkt proportional zum Prozentsatz. Nimm das p-Fache des Wertes für 1 %.", "formula": "W = p · (G / 100)", "uses": ["direkte-proportionalitaet"]}
+          ]
+        }
+      ],
+      "example": "In einer Kiste liegen 48 Steine. 75 % davon sind blau. Das sind 48 · 0,75 = 36 blaue Steine.",
+      "sources": [{"label": "Serlo · Grundwert, Prozentwert und Prozentsatz", "url": "https://de.serlo.org/mathe/36750/einfuehrung-in-grundwert-prozentwert-und-prozentsatz"}]
+    },
+    {
+      "id": "rationale-zahlen",
+      "topic": "zahlen-und-konstanten",
+      "kind": "Begriff",
+      "title": "Rationale Zahlen",
+      "summary": "Eine Zahl heißt rational, wenn sie sich als Bruch aus zwei ganzen Zahlen mit einem Nenner ungleich null schreiben lässt. Ein vollständig gekürzter Bruch mit positivem Nenner gibt jeder rationalen Zahl eine eindeutige Darstellung.",
+      "formula": ["ℚ = { ", {"text": "a/b", "ref": "bruch"}, " | a, b ∈ ℤ, b ≠ 0 }"],
+      "notation": [["ℚ", "Menge der rationalen Zahlen"], ["ℤ", "Menge der ganzen Zahlen"]],
+      "example": "−0,6 gehört zu ℚ, weil −0,6 = −6/10 = −3/5 gilt. Auch die ganze Zahl 7 gehört dazu, denn 7 = 7/1.",
+      "sources": [{"label": "Serlo · Rationale Zahlen", "url": "https://de.serlo.org/mathe/56112/rationale-zahlen"}]
+    },
+    {
+      "id": "pi",
+      "topic": "zahlen-und-konstanten",
+      "kind": "Konstante",
+      "title": "Kreiszahl Pi (π)",
+      "summary": "Teilt man den Umfang eines Kreises durch seinen Durchmesser, erhält man bei jedem Kreis dieselbe Zahl. Sie heißt Pi und wird π geschrieben. π ist irrational. Jede endliche Dezimalangabe ist deshalb eine Näherung.",
+      "formula": ["π = ", {"text": "U", "ref": "kreisumfang"}, " / ", {"text": "d", "ref": "radius-durchmesser"}, " ≈ 3,14159"],
+      "figure": "kreis-masse",
+      "notation": [["U", "Länge der Kreislinie"], ["d", "Durchmesser desselben Kreises, in derselben Längeneinheit wie U"]],
+      "example": "Ein Rad mit genau 1 m Durchmesser legt bei einer vollen Umdrehung ohne Schlupf genau π m zurück, also ungefähr 3,14 m.",
+      "sources": [{"label": "Serlo · Kreiszahl Pi", "url": "https://de.serlo.org/mathe/2107/kreiszahl-pi"}]
+    },
+    {
+      "id": "quadrat-paritaet",
+      "topic": "zahlen-und-konstanten",
+      "kind": "Lemma",
+      "title": "Gerade und ungerade Quadrate",
+      "summary": "Eine ganze Zahl und ihr Quadrat haben dieselbe Parität. Man kann also vom Quadrat auf die Ausgangszahl schließen. Ist n² gerade, dann war bereits n gerade.",
+      "formula": ["n² gerade   ⇔   n gerade"],
+      "proofs": [
+        {
+          "id": "zwei-faelle",
+          "title": "Beweis durch zwei Fälle",
+          "steps": [
+          {"id": "gerade", "title": "Die gerade Ausgangszahl", "body": "Für n = 2k mit ganzzahligem k ergibt sich n² = 4k² = 2 · (2k²). Das Quadrat ist durch 2 teilbar."},
+          {"id": "ungerade", "title": "Die ungerade Ausgangszahl", "body": "Für n = 2k + 1 liefert das Ausmultiplizieren eine gerade Zahl plus eins. Damit kann eine ungerade Ausgangszahl niemals ein gerades Quadrat haben.", "formula": "(2k + 1)² = 2 · (2k² + 2k) + 1", "uses": ["erste-binomische-formel"]}
+          ]
+        }
+      ],
+      "example": "14² = 196 ist gerade und 15² = 225 ist ungerade. Das Argument gilt auch für negative ganze Zahlen.",
+      "sources": [{"label": "mathe online · Warum die Wurzel aus 2 irrational ist", "url": "https://mathe-online.univie.ac.at/mathint/zahlen/i_sqrt2.html"}]
+    },
+    {
+      "id": "wurzel-zwei",
+      "topic": "zahlen-und-konstanten",
+      "kind": "Konstante",
+      "title": "Wurzel aus zwei (√2)",
+      "summary": "√2 ist die positive Zahl, deren Quadrat 2 ergibt. Sie ist die Länge der Diagonale eines Quadrats mit Seitenlänge 1. Obwohl man diese Länge zeichnen kann, lässt sie sich nicht als Bruch ganzer Zahlen angeben.",
+      "formula": [{"text": "√", "ref": "quadratwurzel"}, "2 ≈ 1,41421"],
+      "proofs": [
+        {
+          "id": "irrationalitaet",
+          "title": "Widerspruchsbeweis der Irrationalität",
+          "steps": [
+          {"id": "bruch-annehmen", "title": "Einen vollständig gekürzten Bruch annehmen", "body": "Angenommen, √2 wäre rational. Dann gäbe es positive ganze Zahlen m und n ohne gemeinsamen Teiler größer als 1 mit √2 = m/n. Quadrieren und Multiplizieren mit n² liefert m² = 2n².", "uses": ["rationale-zahlen", "gleichwertige-brueche"]},
+          {"id": "zaehler", "title": "Den Zähler untersuchen", "body": "Die rechte Seite 2n² ist gerade. Also ist m² gerade und nach dem Paritätslemma auch m selbst. Schreibe m = 2k.", "uses": ["quadrat-paritaet"]},
+          {"id": "nenner", "title": "Den Nenner untersuchen", "body": "Setzt man m = 2k ein, folgt 4k² = 2n² und damit n² = 2k². Dieselbe Überlegung zeigt, dass auch n gerade ist. Der gemeinsame Teiler 2 widerspricht der Wahl des gekürzten Bruchs.", "uses": ["quadrat-paritaet"]}
+          ]
+        }
+      ],
+      "example": "1,41² = 1,9881 und 1,42² = 2,0164. Deshalb liegt √2 zwischen 1,41 und 1,42.",
+      "sources": [{"label": "mathe online · Warum die Wurzel aus 2 irrational ist", "url": "https://mathe-online.univie.ac.at/mathint/zahlen/i_sqrt2.html"}]
+    },
+    {
+      "id": "direkte-proportionalitaet",
+      "topic": "verhaeltnisse-und-gleichungen",
+      "kind": "Begriff",
+      "title": "Direkte Proportionalität",
+      "summary": "Zwei Größen sind direkt proportional, wenn für alle betrachteten Werte y = k · x mit festem Faktor k gilt. Verdoppeln von x verdoppelt dann y. Für x ≠ 0 ist der Quotient y/x konstant.",
+      "formula": ["y = k · x"],
+      "notation": [["x, y", "Zusammengehörige Werte der beiden Größen"], ["k", "Proportionalitätsfaktor"]],
+      "example": "Kostet Stoff 6 Euro pro Meter, kosten 2,5 m genau 15 Euro. Der Faktor k = 6 €/m enthält hier auch die Umrechnung der Einheiten.",
+      "sources": [{"label": "Serlo · Direkte Proportionalität", "url": "https://de.serlo.org/mathe/1771/direkte-proportionalitaet"}]
+    },
+    {
+      "id": "dreisatz",
+      "topic": "verhaeltnisse-und-gleichungen",
+      "kind": "Verfahren",
+      "title": "Dreisatz bei direkter Proportionalität",
+      "summary": "Aus einem bekannten Wertepaar rechnet man zuerst auf eine Einheit und von dort auf die gesuchte Anzahl. Das funktioniert, wenn die Zuordnung direkt proportional ist.",
+      "formula": ["y₂ = (y₁ / x₁) · x₂"],
+      "proofs": [
+        {
+          "id": "einheit",
+          "title": "Warum der Einheitswert genügt",
+          "steps": [
+          {"id": "einheit", "title": "Den Faktor bestimmen", "body": "Aus y₁ = k · x₁ folgt für x₁ ≠ 0 der Faktor k = y₁/x₁. Er gibt den y-Wert für eine Einheit x an.", "uses": ["direkte-proportionalitaet"]},
+          {"id": "ziel", "title": "Den Zielwert bestimmen", "body": "Multipliziere den Einheitswert mit x₂. Für x₂ ≠ 0 kann man denselben Zusammenhang auch als Verhältnisgleichung y₁/x₁ = y₂/x₂ lesen.", "uses": ["verhaeltnisgleichung"]}
+          ]
+        }
+      ],
+      "example": "5 m Stoff kosten 30 €. Dann kostet 1 m genau 6 €. Für 8 m bezahlt man 48 €, solange derselbe Meterpreis gilt.",
+      "sources": [{"label": "Serlo · Dreisatz", "url": "https://de.serlo.org/mathe/1769/dreisatz"}]
+    },
+    {
+      "id": "distributivgesetz",
+      "topic": "terme-und-wurzeln",
+      "kind": "Rechenregel",
+      "title": "Distributivgesetz",
+      "summary": "Multipliziert man eine Summe mit einer Zahl, wird jeder Summand mit dieser Zahl multipliziert. Rückwärts gelesen erlaubt dieselbe Regel, einen gemeinsamen Faktor auszuklammern.",
+      "formula": ["k · (a + b) = k · a + k · b"],
+      "example": "Beim Kopfrechnen hilft die Differenz 100 − 1. So ergibt sich 7 · 99 = 7 · 100 − 7 · 1 = 693.",
+      "sources": [{"label": "Serlo · Distributivgesetz", "url": "https://de.serlo.org/mathe/1677/distributivgesetz"}]
+    },
+    {
+      "id": "quadratwurzel",
+      "topic": "terme-und-wurzeln",
+      "kind": "Begriff",
+      "title": "Quadratwurzel",
+      "summary": "Für x ≥ 0 bezeichnet √x die eindeutig bestimmte nichtnegative Zahl, deren Quadrat x ist. Die Gleichung y² = x hat für x > 0 zwei Lösungen. Auch −√x erfüllt dann die Gleichung.",
+      "formula": ["y = √x   ⇔   y ≥ 0 und y² = x"],
+      "example": "Eine quadratische Fläche von 81 cm² hat 9 cm Seitenlänge. Auch (−9)² = 81, doch √81 ist die nichtnegative Zahl 9.",
+      "sources": [{"label": "Serlo · Rechnen mit Quadratwurzeln", "url": "https://de.serlo.org/mathe/1511/rechnen-mit-quadratwurzeln"}]
+    },
+    {
+      "id": "erste-binomische-formel",
+      "topic": "terme-und-wurzeln",
+      "kind": "Formel",
+      "title": "Erste binomische Formel",
+      "summary": "Beim Quadrieren einer Summe tritt das Produkt a · b zweimal auf. Deshalb enthält (a + b)² neben a² und b² auch 2ab.",
+      "formula": ["(a + b)² = a² + 2ab + b²"],
+      "proofs": [
+        {
+          "id": "ausmultiplizieren",
+          "title": "Beweis durch Ausmultiplizieren",
+          "steps": [
+          {"id": "verteilen", "title": "Beide Faktoren ausschreiben", "body": "Schreibe das Quadrat als (a + b) · (a + b). Verteile jeden Summanden der ersten Klammer auf beide Summanden der zweiten.", "formula": "(a + b)(a + b) = a² + ab + ba + b²", "uses": ["distributivgesetz"]},
+          {"id": "zusammenfassen", "title": "Gleiche Produkte zusammenfassen", "body": "Für reelle Zahlen sind ab und ba gleich. Zusammen ergeben sie 2ab."}
+          ]
+        }
+      ],
+      "example": "31² = (30 + 1)² = 900 + 60 + 1 = 961. Die 60 stammt aus den beiden Produkten 30 · 1 und 1 · 30.",
+      "sources": [{"label": "Serlo · Binomische Formeln", "url": "https://de.serlo.org/mathe/1499/binomische-formeln"}]
+    },
+    {
+      "id": "differenz-zweier-quadrate",
+      "topic": "terme-und-wurzeln",
+      "kind": "Formel",
+      "title": "Differenz zweier Quadrate",
+      "summary": "Die dritte binomische Formel zerlegt die Differenz a² − b² in das Produkt aus Summe und Differenz der Ausgangszahlen. Das erklärt, warum bei einem Kreisring neben seiner Breite auch die Summe der Radien vorkommt.",
+      "formula": ["a² − b² = (a − b)(a + b)"],
+      "proofs": [
+        {
+          "id": "gegenprodukte",
+          "title": "Beweis durch Ausmultiplizieren",
+          "steps": [
+          {"id": "verteilen", "title": "Die vier Teilprodukte bilden", "body": "Multipliziere a und −b jeweils mit beiden Summanden der zweiten Klammer.", "formula": "(a − b)(a + b) = a² + ab − ba − b²", "uses": ["distributivgesetz"]},
+          {"id": "aufheben", "title": "Die gemischten Produkte aufheben", "body": "Da ab = ba, ist ihre Differenz null. Es bleiben das erste und das letzte Quadrat mit verschiedenen Vorzeichen übrig."}
+          ]
+        }
+      ],
+      "example": "51 · 49 = (50 + 1)(50 − 1) = 2500 − 1 = 2499.",
+      "sources": [{"label": "Serlo · Binomische Formeln", "url": "https://de.serlo.org/mathe/1499/binomische-formeln"}]
+    },
+    {
+      "id": "abstandsformel",
+      "topic": "rechtwinklige-dreiecke",
+      "kind": "Formel",
+      "title": "Abstand zweier Punkte",
+      "summary": "In einem rechtwinkligen Koordinatensystem mit gleicher Längeneinheit auf beiden Achsen bilden die horizontalen und vertikalen Koordinatendifferenzen die Katheten eines Hilfsdreiecks. Seine Hypotenuse verbindet die beiden Punkte direkt.",
+      "formula": ["d = ", {"text": "√", "ref": "quadratwurzel"}, "((x₂ − x₁)² + (y₂ − y₁)²)"],
+      "proofs": [
+        {
+          "id": "hilfsdreieck",
+          "title": "Herleitung mit einem Hilfsdreieck",
+          "steps": [
+          {"id": "katheten", "title": "Einen Zwischenpunkt einsetzen", "body": "Gehe von A(x₁ | y₁) zunächst bis (x₂ | y₁) und dann bis B(x₂ | y₂). Die Teilstrecken sind rechtwinklig und haben die Längen |x₂ − x₁| und |y₂ − y₁|."},
+          {"id": "quadrate", "title": "Den direkten Weg bestimmen", "body": "Der Satz des Pythagoras liefert das Quadrat des Abstands. Ziehe die nichtnegative Quadratwurzel. Liegen beide Punkte auf einer achsenparallelen Geraden, ergibt dieselbe Formel den Betrag der einzigen verbleibenden Differenz.", "uses": ["pythagoras", "quadratwurzel"]}
+          ]
+        }
+      ],
+      "example": "Von A(−2 | 1) nach B(4 | 9) sind es 6 Einheiten nach rechts und 8 nach oben. Der direkte Abstand ist √(36 + 64) = 10 Einheiten.",
+      "sources": [{"label": "Serlo · Abstand zweier Punkte berechnen", "url": "https://de.serlo.org/mathe/1783/abstand-zweier-punkte-berechnen"}]
+    },
+    {
+      "id": "rechteckflaeche",
+      "topic": "laengen-und-flaechen",
+      "kind": "Formel",
+      "title": "Flächeninhalt eines Rechtecks",
+      "summary": "Der Flächeninhalt eines Rechtecks ist Länge mal Breite. Beide Längen müssen für das Produkt in derselben Einheit vorliegen. Das Ergebnis hat die zugehörige Flächeneinheit.",
+      "formula": ["A = a · b"],
+      "notation": [["a, b", "Längen benachbarter Rechteckseiten"], ["A", "Flächeninhalt"]],
+      "example": "Ein Rechteck ist 30 mm breit und 5 cm lang. 30 mm sind 3 cm. Seine Fläche beträgt deshalb 3 cm · 5 cm = 15 cm².",
+      "sources": [{"label": "Serlo · Rechteck", "url": "https://de.serlo.org/mathe/1697/rechteck"}]
+    },
+    {
+      "id": "dreiecksflaeche",
+      "topic": "laengen-und-flaechen",
+      "kind": "Formel",
+      "title": "Flächeninhalt eines Dreiecks",
+      "summary": "Zu jeder Grundseite g gehört der senkrechte Abstand h der gegenüberliegenden Ecke von der Geraden durch die Grundseite. Grundseite mal zugehörige Höhe ergibt das Doppelte der Dreiecksfläche. Bei einem stumpfwinkligen Dreieck kann der Höhenfuß außerhalb der Seite liegen.",
+      "formula": ["A = g · h / 2"],
+      "proofs": [
+        {
+          "id": "verdoppeln",
+          "title": "Herleitung durch Verdoppeln",
+          "steps": [
+          {"id": "parallelogramm", "title": "Eine zweite Kopie anlegen", "body": "Drehe eine Kopie des Dreiecks um den Mittelpunkt einer seiner beiden anderen Seiten. Beide Dreiecke bilden ein Parallelogramm mit Grundseite g und Höhe h."},
+          {"id": "halbieren", "title": "Das Ganze halbieren", "body": "Jeder Schnitt durch das Parallelogramm parallel zur Grundseite hat zwischen den schrägen Seiten die Länge g. Ein Rechteck der Breite g und Höhe h hat dieselben Schnittlängen und damit dieselbe Fläche. Das ursprüngliche Dreieck nimmt die Hälfte davon ein.", "formula": "2A = g · h", "uses": ["rechteckflaeche"]}
+          ]
+        }
+      ],
+      "example": "Ein Dreieck mit Grundseite 8 cm und zugehöriger Höhe 3 cm hat 12 cm² Fläche. Verschiebt man seine Spitze parallel zur Grundseite, bleibt der Abstand 3 cm und damit auch die Fläche gleich.",
+      "sources": [{"label": "Serlo · Flächeninhalt eines Dreiecks", "url": "https://de.serlo.org/mathe/51490/flaecheninhalt-eines-dreiecks"}]
+    },
+    {
+      "id": "quadratdiagonale",
+      "topic": "laengen-und-flaechen",
+      "kind": "Formel",
+      "title": "Diagonale eines Quadrats",
+      "summary": "Die Diagonale d verbindet zwei gegenüberliegende Ecken eines Quadrats. Ihr Verhältnis zur Seitenlänge a ist immer √2. Schon die Diagonale eines Quadrats aus einem Karopapierfeld führt damit zu einer irrationalen Zahl.",
+      "formula": ["d = a · ", {"text": "√2", "ref": "wurzel-zwei"}],
+      "figure": "quadrat-diagonale",
+      "proofs": [
+        {
+          "id": "diagonale",
+          "title": "Herleitung am halben Quadrat",
+          "steps": [
+          {"id": "halbieren", "title": "Das Quadrat entlang der Diagonale teilen", "body": "Die Diagonale erzeugt zwei rechtwinklige Dreiecke mit den Katheten a und a. In einem davon gilt der Satz des Pythagoras.", "formula": "d² = a² + a² = 2a²", "uses": ["pythagoras"]},
+          {"id": "positive-laenge", "title": "Die positive Länge auswählen", "body": "a · √2 ist positiv und hat das Quadrat a² · 2. Nach der Definition der Quadratwurzel ist das die gesuchte Länge d.", "uses": ["quadratwurzel", "wurzel-zwei"]}
+          ]
+        }
+      ],
+      "example": "Ein quadratisches Blatt mit 10 cm Seitenlänge misst über die Diagonale genau 10√2 cm, also ungefähr 14,14 cm.",
+      "sources": [{"label": "Serlo · Satz des Pythagoras", "url": "https://de.serlo.org/mathe/1515/satz-des-pythagoras"}, {"label": "mathe online · Warum die Wurzel aus 2 irrational ist", "url": "https://mathe-online.univie.ac.at/mathint/zahlen/i_sqrt2.html"}]
+    },
+    {
+      "id": "radius-durchmesser",
+      "topic": "kreis-und-winkel",
+      "kind": "Begriff",
+      "title": "Radius und Durchmesser",
+      "summary": "Alle Punkte einer Kreislinie haben vom Mittelpunkt M den gleichen Abstand r, den Radius. Eine Strecke zwischen zwei Kreispunkten, die durch M verläuft, besteht aus zwei Radien. Ihre Länge d heißt Durchmesser.",
+      "formula": ["d = 2r"],
+      "figure": "kreis-masse",
+      "notation": [["M", "Mittelpunkt des Kreises"], ["r", "Radius"], ["d", "Durchmesser"]],
+      "example": "Passt eine runde Scheibe genau in ein 8 cm breites quadratisches Fach, beträgt ihr Durchmesser 8 cm und ihr Radius 4 cm.",
+      "sources": [{"label": "Serlo · Kreisumfang und Kreisfläche", "url": "https://de.serlo.org/mathe/276459/kreisumfang-und-kreisflaeche"}]
+    },
+    {
+      "id": "kreisumfang",
+      "topic": "kreis-und-winkel",
+      "kind": "Formel",
+      "title": "Kreisumfang",
+      "summary": "Der Umfang U misst die Länge der Kreislinie. Er wächst direkt proportional zum Durchmesser. Beim Abrollen eines Rades ohne Schlupf entspricht eine volle Umdrehung genau einem Umfang.",
+      "formula": ["U = ", {"text": "π", "ref": "pi"}, " · ", {"text": "d", "ref": "radius-durchmesser"}, " = 2", {"text": "π", "ref": "pi"}, {"text": "r", "ref": "radius-durchmesser"}],
+      "figure": "kreis-masse",
+      "proofs": [
+        {
+          "id": "verhaeltnis",
+          "title": "Herleitung aus der Definition von Pi",
+          "steps": [
+          {"id": "umfang-isolieren", "title": "Das Verhältnis nach U auflösen", "body": "Für jeden Kreis mit positivem Durchmesser gilt U/d = π. Multipliziere mit d. Der feste Faktor π erklärt zugleich die direkte Proportionalität.", "formula": "U = π · d", "uses": ["pi", "direkte-proportionalitaet"]},
+          {"id": "radius", "title": "Zum Radius wechseln", "body": "Ein Durchmesser besteht aus zwei Radien. Setze d = 2r in die erste Formel ein.", "formula": "U = 2πr", "uses": ["radius-durchmesser"]}
+          ]
+        }
+      ],
+      "example": "Ein Rad mit 70 cm Durchmesser legt pro Umdrehung 70π cm zurück. Das sind rund 2,20 m.",
+      "sources": [{"label": "Serlo · Kreisumfang und Kreisfläche", "url": "https://de.serlo.org/mathe/276459/kreisumfang-und-kreisflaeche"}]
+    },
+    {
+      "id": "kreisflaeche",
+      "topic": "kreis-und-winkel",
+      "kind": "Formel",
+      "title": "Kreisfläche",
+      "summary": "Die Kreisfläche umfasst das Innere der Kreislinie. Ihr Inhalt ist π mal Radius zum Quadrat. Verdoppelt man den Radius, vervierfacht sich die Fläche.",
+      "formula": ["A = ", {"text": "π", "ref": "pi"}, " · ", {"text": "r", "ref": "radius-durchmesser"}, "²"],
+      "proofs": [
+        {
+          "id": "vielecke",
+          "title": "Herleitung mit eingeschriebenen Vielecken",
+          "steps": [
+          {"id": "dreiecke", "title": "Das Vieleck in Dreiecke zerlegen", "body": "Verbinde die Ecken eines regelmäßigen eingeschriebenen Vielecks mit dem Kreismittelpunkt. Alle Teildreiecke haben dieselbe Höhe hₙ, den senkrechten Abstand vom Mittelpunkt zu einer Seite. Die Summe ihrer Grundseiten ist der Vieleckumfang uₙ.", "formula": "Aₙ = uₙ · hₙ / 2", "uses": ["dreiecksflaeche"]},
+          {"id": "grenzwert", "title": "Die Seitenzahl vergrößern", "body": "Verdopple die Zahl der Seiten immer wieder. Die Vielecke füllen die Kreisscheibe im Grenzwert aus. Zugleich nähert sich uₙ dem Kreisumfang U und hₙ dem Radius r. Die Flächenformel geht deshalb in A = U · r / 2 über."},
+          {"id": "umfang", "title": "Den Umfang einsetzen", "body": "Mit dem Kreisumfang U = 2πr kürzt sich der Faktor 2 gegen den Nenner. Es bleibt das Produkt aus π und dem Radiusquadrat.", "formula": "A = (2πr) · r / 2 = πr²", "uses": ["kreisumfang"]}
+          ]
+        }
+      ],
+      "example": "Ein runder Teller mit 10 cm Radius hat eine Fläche von 100π cm². Ein Teller mit 20 cm Radius hat 400π cm².",
+      "sources": [{"label": "Serlo · Kreisumfang und Kreisfläche", "url": "https://de.serlo.org/mathe/276459/kreisumfang-und-kreisflaeche"}, {"label": "Archimedes · Kreismessung, Satz 1", "url": "https://people.math.harvard.edu/archive/archimedes09/pdf/Measurement.of.the.Circle.pdf"}]
+    },
+    {
+      "id": "bogenmass",
+      "topic": "kreis-und-winkel",
+      "kind": "Begriff",
+      "title": "Bogenmaß",
+      "summary": "Ein Winkel im Bogenmaß wird durch das Verhältnis von Bogenlänge s zu Radius r beschrieben. Ein Winkel von einem Radiant schneidet einen Bogen aus, der genau so lang ist wie der Radius. Ein Vollwinkel hat 2π Radiant.",
+      "formula": ["φ = s / ", {"text": "r", "ref": "radius-durchmesser"}, "     180° = ", {"text": "π", "ref": "pi"}, " rad"],
+      "figure": "kreis-sektor",
+      "proofs": [
+        {
+          "id": "vollwinkel",
+          "title": "Umrechnung zwischen Grad und Radiant",
+          "steps": [
+          {"id": "vollkreis", "title": "Den ganzen Kreis als Bogen nehmen", "body": "Beim Vollwinkel ist die Bogenlänge gleich dem Umfang 2πr. Geteilt durch den Radius ergibt das 2π. Im Gradmaß hat derselbe Vollwinkel 360°.", "uses": ["kreisumfang"]},
+          {"id": "anteil", "title": "Den Anteil am Vollwinkel übertragen", "body": "Ein Winkel α in Grad nimmt den Anteil α/360° ein. Multipliziere diesen Anteil mit 2π, um die Maßzahl φ in Radiant zu erhalten.", "formula": "φ = (α / 360°) · 2π", "uses": ["bruch"]}
+          ]
+        }
+      ],
+      "example": "Ein Viertelkreis gehört zu 90° oder π/2 Radiant. Bei r = 2 cm misst sein Bogen π cm. Bogenlänge geteilt durch Radius ergibt wieder π/2.",
+      "sources": [{"label": "Serlo · Bogenmaß", "url": "https://de.serlo.org/mathe/1963/bogenmass"}]
+    },
+    {
+      "id": "bogenlaenge",
+      "topic": "kreis-und-winkel",
+      "kind": "Formel",
+      "title": "Länge eines Kreisbogens",
+      "summary": "Ein Mittelpunktswinkel schneidet aus der Kreislinie denselben Anteil aus, den er am Vollwinkel einnimmt. Für einen einzelnen Umlauf liegt α zwischen 0° und 360°. Im Bogenmaß genügt die Multiplikation des Radius mit der Winkelmaßzahl.",
+      "formula": ["s = (α / 360°) · 2", {"text": "π", "ref": "pi"}, "r"],
+      "figure": "kreis-sektor",
+      "proofs": [
+        {
+          "id": "vollkreis",
+          "title": "Herleitung aus dem Kreisumfang",
+          "steps": [
+          {"id": "anteil", "title": "Den Anteil am Umfang bestimmen", "body": "Gleich große Mittelpunktswinkel spannen auf demselben Kreis gleich lange Bögen auf. Der Anteil α/360° des gesamten Winkels liefert daher denselben Anteil am Umfang U.", "formula": "s = (α / 360°) · U", "uses": ["direkte-proportionalitaet", "kreisumfang"]},
+          {"id": "radiant", "title": "Die kurze Form im Bogenmaß lesen", "body": "Ist φ die Maßzahl des Winkels in Radiant, gilt nach der Definition φ = s/r. Multiplizieren mit r ergibt die zweite Schreibweise.", "formula": "s = r · φ", "uses": ["bogenmass"]}
+          ]
+        }
+      ],
+      "example": "Der abgebildete Bogen umfasst 120° und damit ein Drittel des Kreises. Bei 6 cm Radius misst er (1/3) · 12π cm = 4π cm.",
+      "sources": [{"label": "Serlo · Kreisbogen, Kreissektor und Kreisring", "url": "https://de.serlo.org/mathe/1553/kreisbogen-kreissektor-und-kreisring"}, {"label": "Serlo · Bogenmaß", "url": "https://de.serlo.org/mathe/1963/bogenmass"}]
+    },
+    {
+      "id": "kreissektor",
+      "topic": "kreis-und-winkel",
+      "kind": "Formel",
+      "title": "Fläche eines Kreissektors",
+      "summary": "Zwei Radien und der dazwischen ausgewählte Kreisbogen begrenzen einen Kreissektor. Seine Fläche ist derselbe Anteil an der Kreisfläche wie sein Mittelpunktswinkel am Vollwinkel.",
+      "formula": ["Aₛ = (α / 360°) · ", {"text": "π", "ref": "pi"}, "r²"],
+      "figure": "kreis-sektor",
+      "proofs": [
+        {
+          "id": "winkelanteil",
+          "title": "Herleitung aus dem Winkelanteil",
+          "steps": [
+          {"id": "bruchteil", "title": "Den Vollkreis anteilig nehmen", "body": "Gemeinsam decken gleich große Sektoren mit gleichem Radius bei einer vollen Drehung die Kreisscheibe ab. Wegen der Proportionalität zum Winkel entfällt auf α der Anteil α/360° der Kreisfläche.", "uses": ["kreisflaeche", "direkte-proportionalitaet"]},
+          {"id": "bogenform", "title": "Die Bogenlänge einsetzen", "body": "Der Bogen erfüllt s = (α/360°) · 2πr. Multipliziert man diese Gleichung mit r/2, erhält man denselben Flächeninhalt.", "formula": "Aₛ = s · r / 2", "uses": ["bogenlaenge"]}
+          ]
+        }
+      ],
+      "example": "Ein Sektor von 120° auf einem Kreis mit 6 cm Radius enthält ein Drittel von 36π cm². Das sind 12π cm². Der zugehörige Bogen ist 4π cm lang.",
+      "sources": [{"label": "Serlo · Kreisbogen, Kreissektor und Kreisring", "url": "https://de.serlo.org/mathe/1553/kreisbogen-kreissektor-und-kreisring"}]
+    },
+    {
+      "id": "kreisring",
+      "topic": "kreis-und-winkel",
+      "kind": "Formel",
+      "title": "Fläche eines Kreisrings",
+      "summary": "Die Stirnseite einer runden Unterlegscheibe ist ein Kreisring. Seine beiden Kreise haben denselben Mittelpunkt. Für die Materialfläche zieht man die innere Kreisfläche von der äußeren ab. Die Ringbreite ist die Differenz der Radien.",
+      "formula": ["A = ", {"text": "π", "ref": "pi"}, "(R² − r²)"],
+      "figure": "kreisring",
+      "notation": [["R", "Außenradius"], ["r", "Innenradius mit 0 < r < R"]],
+      "proofs": [
+        {
+          "id": "flaechendifferenz",
+          "title": "Herleitung durch Abziehen",
+          "steps": [
+          {"id": "abziehen", "title": "Das Loch abziehen", "body": "Die volle äußere Scheibe hat den Flächeninhalt πR². Das Loch beansprucht πr². Nach dem Abziehen kann man π ausklammern.", "formula": "A = πR² − πr² = π(R² − r²)", "uses": ["kreisflaeche", "distributivgesetz"]},
+          {"id": "faktorisieren", "title": "Die Ringbreite sichtbar machen", "body": "Zerlege die Differenz der Quadrate in zwei Faktoren. R − r ist die Breite der Unterlegscheibe. Der zweite Faktor R + r erklärt, warum zwei gleich breite Ringe verschieden viel Material enthalten können.", "formula": "A = π · (R − r) · (R + r)", "uses": ["differenz-zweier-quadrate"]}
+          ]
+        }
+      ],
+      "example": "Eine Unterlegscheibe hat außen 7 mm und innen 5 mm Radius. Der Ring ist 2 mm breit. Seine Fläche beträgt π · 2 · 12 mm² = 24π mm², also rund 75,4 mm².",
+      "sources": [{"label": "Serlo · Kreisbogen, Kreissektor und Kreisring", "url": "https://de.serlo.org/mathe/1553/kreisbogen-kreissektor-und-kreisring"}]
+    },
+    {
+      "id": "satz-des-thales",
+      "topic": "kreis-und-winkel",
+      "kind": "Satz",
+      "title": "Satz des Thales",
+      "summary": "Sind A und B die Endpunkte eines Kreisdurchmessers und liegt C an einer anderen Stelle der Kreislinie, dann ist der Winkel ACB ein rechter Winkel. C darf sich auf beiden Halbkreisen bewegen.",
+      "formula": ["∠ACB = 90°"],
+      "figure": "thales-kreis",
+      "proofs": [
+        {
+          "id": "radien",
+          "title": "Beweis mit drei Radien",
+          "steps": [
+          {"id": "radien", "title": "Den Mittelpunkt mit C verbinden", "body": "MA, MB und MC sind Radien desselben Kreises. Die Dreiecke AMC und BMC sind daher gleichschenklig. Die Winkel bei A und bei C im ersten Dreieck sind gleich groß, ebenso die Winkel bei B und bei C im zweiten.", "uses": ["radius-durchmesser"]},
+          {"id": "winkelsumme", "title": "Die Winkel an C zusammensetzen", "body": "Nenne die Winkel bei A und B jeweils α und β. Der Winkel bei C setzt sich aus α und β zusammen. Im Dreieck ABC gilt daher 2(α + β) = 180°. Folglich ist der Winkel bei C genau 90°."}
+          ]
+        }
+      ],
+      "example": "Eine 10 cm lange Strecke AB ist der Durchmesser. Liegt C auf dem Kreis und ist AC = 6 cm, gilt wegen des rechten Winkels BC² = 10² − 6² = 64 cm². Damit ist BC = 8 cm.",
+      "sources": [{"label": "Euklid · Elemente III.31", "url": "https://mathcs.clarku.edu/~DJoyce/java/elements/bookIII/propIII31.html"}]
+    },
+    {
+      "id": "zylindermantel",
+      "topic": "zylinder",
+      "kind": "Formel",
+      "title": "Mantelfläche eines Zylinders",
+      "summary": "Das Etikett einer geraden zylindrischen Dose lässt sich entlang einer senkrechten Linie öffnen und als Rechteck ausrollen. Eine Seite des Rechtecks ist so lang wie der Umfang des Grundkreises, die andere wie die Höhe des Zylinders.",
+      "formula": ["M = 2", {"text": "π", "ref": "pi"}, "rh"],
+      "figure": "zylinder-netz",
+      "proofs": [
+        {
+          "id": "abrollen",
+          "title": "Herleitung am abgerollten Mantel",
+          "steps": [
+          {"id": "breite", "title": "Die Etikettbreite bestimmen", "body": "Die obere und die untere Etikettkante umrunden die Dose jeweils genau einmal. Beim Abrollen behalten sie ihre Länge U = 2πr.", "uses": ["kreisumfang"]},
+          {"id": "rechteck", "title": "Das Rechteck ausmessen", "body": "Beim Aufschneiden ändert sich die Fläche des Mantels nicht. Multipliziere seine abgewickelte Breite U mit seiner Höhe h.", "formula": "M = U · h = 2πrh", "uses": ["rechteckflaeche"]}
+          ]
+        }
+      ],
+      "example": "Ein Etikett soll eine Dose mit Radius 3 cm und Höhe 5 cm einmal ohne Überlappung umschließen. Es muss 6π cm breit und 5 cm hoch sein. Seine Fläche beträgt 30π cm².",
+      "sources": [{"label": "Serlo · Zylinder", "url": "https://de.serlo.org/mathe/1555/zylinder"}]
+    },
+    {
+      "id": "zylindervolumen",
+      "topic": "zylinder",
+      "kind": "Formel",
+      "title": "Volumen eines Zylinders",
+      "summary": "Das Volumen eines geraden Kreiszylinders ist die Grundfläche mal die Höhe. In jeder Höhe ist der Schnitt parallel zur Grundfläche ein Kreis mit demselben Radius.",
+      "formula": ["V = ", {"text": "π", "ref": "pi"}, "r²h"],
+      "proofs": [
+        {
+          "id": "konstanter-querschnitt",
+          "title": "Herleitung über den konstanten Querschnitt",
+          "steps": [
+          {"id": "grundflaeche", "title": "Die Fläche einer Schicht bestimmen", "body": "Die zur Grundfläche parallelen Schnitte haben alle denselben Flächeninhalt G. Aus dem Innenradius r berechnet man G = πr².", "uses": ["kreisflaeche"]},
+          {"id": "hoehe", "title": "Die Schichten über die Höhe zusammennehmen", "body": "Ein Quader mit Grundfläche G und derselben Höhe hat in jeder Höhe gleich große Querschnittsflächen wie der Zylinder. Nach dem Prinzip von Cavalieri stimmen die Volumina überein. Für den Quader ist das G · h.", "formula": "V = G · h = πr²h"}
+          ]
+        }
+      ],
+      "example": "Ein zylindrischer Messbecher hat innen 3 cm Radius. Bei einer Füllhöhe von 5 cm enthält er 45π cm³, also rund 141 ml. Ein Kubikzentimeter entspricht einem Milliliter.",
+      "sources": [{"label": "Serlo · Zylinder", "url": "https://de.serlo.org/mathe/1555/zylinder"}]
+    },
+    {
+      "id": "zylinderoberflaeche",
+      "topic": "zylinder",
+      "kind": "Formel",
+      "title": "Oberfläche eines Zylinders",
+      "summary": "Die Oberfläche eines geschlossenen geraden Kreiszylinders setzt sich aus Boden, Deckel und Mantel zusammen. Boden und Deckel sind gleich große Kreisscheiben.",
+      "formula": ["O = 2", {"text": "π", "ref": "pi"}, "r(r + h)"],
+      "figure": "zylinder-netz",
+      "proofs": [
+        {
+          "id": "netz",
+          "title": "Herleitung am Körpernetz",
+          "steps": [
+          {"id": "teile", "title": "Die drei Flächen addieren", "body": "Boden und Deckel tragen je πr² bei, der Mantel 2πrh. Ihre gemeinsamen Ränder haben keinen Flächeninhalt.", "formula": "O = 2πr² + 2πrh", "uses": ["kreisflaeche", "zylindermantel"]},
+          {"id": "faktor", "title": "Den gemeinsamen Faktor herausheben", "body": "In beiden Summanden steckt 2πr. Nach dem Ausklammern stehen in der Klammer der Radius und die Höhe.", "formula": "O = 2πr(r + h)", "uses": ["distributivgesetz"]}
+          ]
+        }
+      ],
+      "example": "Für eine Dose mit Radius 3 cm und Höhe 5 cm fallen zweimal 9π cm² für die Kreisflächen und 30π cm² für den Mantel an. Insgesamt sind das 48π cm² ohne Falze oder Überlappung.",
+      "sources": [{"label": "Serlo · Zylinder", "url": "https://de.serlo.org/mathe/1555/zylinder"}]
     }
   ]
 }

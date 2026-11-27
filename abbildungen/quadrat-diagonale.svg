@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 234" width="400" height="234" role="img" aria-labelledby="title desc">
+  <title id="title">Diagonale im Quadrat</title>
+  <desc id="desc">Die Diagonale d verläuft von links unten nach rechts oben und teilt das Quadrat in zwei rechtwinklige Dreiecke mit Katheten der Länge a.</desc>
+  <style>
+    .line,.guide,.accent,.thin { fill:none; stroke:#24434a; stroke-width:2; stroke-linejoin:round }
+    .guide { stroke:#657e83; stroke-width:1.2; stroke-dasharray:4 3 }
+    .thin { stroke-width:1.2 }
+    .accent { stroke:#006b65; stroke-width:2.6 }
+    .tint { fill:#c6eae2 }
+    .point { fill:#24434a }
+    text { fill:#15383e; font:17px "Liberation Sans",Arial,sans-serif; text-anchor:middle }
+    .math { font:italic 22px "Liberation Serif",Georgia,serif }
+  </style>
+  <rect width="400" height="234" fill="#f1f7f6"/>
+  <path class="tint" d="M109 28h164L109 192Z"/>
+  <rect class="line" x="109" y="28" width="164" height="164"/>
+  <path class="accent" d="M109 192 273 28"/>
+  <path class="thin" d="M259 192v-14h14"/>
+  <text class="math" x="192" y="218">a</text><text class="math" x="293" y="113">a</text><text class="math" x="205" y="120">d</text>
+</svg>
