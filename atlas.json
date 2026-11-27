@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "language": "de",
+  "chapter": "Geometrie",
+  "start": "hoehensatz",
+  "figures": {
+    "dreieck-mit-hoehe": {
+      "src": "abbildungen/hypotenusenhoehe.svg",
+      "width": 400,
+      "height": 248,
+      "alt": "Rechtwinkliges Dreieck ABC. Von C fällt die Höhe h auf den Punkt H der Hypotenuse AB. Links liegt AH = q, rechts HB = p. Die Katheten sind AC = b und BC = a.",
+      "caption": "H teilt die Hypotenuse c in die Abschnitte q und p."
+    }
+  },
+  "entries": [
+    {
+      "id": "hoehensatz",
+      "kind": "Satz",
+      "title": "Höhensatz",
+      "summary": "Zieht man im rechtwinkligen Dreieck die Höhe auf die Hypotenuse, dann ist das Quadrat ihrer Länge gleich dem Produkt der beiden Hypotenusenabschnitte.",
+      "formula": [{"text":"h","ref":"hypotenusenhoehe"}, "² = ", {"text":"p","ref":"hypotenusenhoehe"}, " · ", {"text":"q","ref":"hypotenusenhoehe"}],
+      "figure": "dreieck-mit-hoehe",
+      "proofs": [{
+        "id": "aehnlichkeit",
+        "title": "Beweis durch ähnliche Dreiecke",
+        "steps": [
+          {"id":"hoehe-zeichnen", "title":"Die Höhe einzeichnen", "body":"Fälle von C das Lot auf AB. Die Höhe CH hat die Länge h und zerlegt das Dreieck in ACH und CBH.", "uses":["hypotenusenhoehe"]},
+          {"id":"dreiecke-vergleichen", "title":"Die beiden Teildreiecke vergleichen", "body":"Die Dreiecke ACH und CBH sind ähnlich. Dabei entspricht AH der Strecke CH und CH der Strecke BH. Ihre Längen stehen im selben Verhältnis.", "formula":"q / h = h / p", "uses":["aehnlichkeitslemma"]},
+          {"id":"produkte-bilden", "title":"Die Verhältnisgleichung umformen", "body":"Multipliziere beide Seiten mit h · p. Links bleibt q · p, rechts h · h. Damit ist der Höhensatz bewiesen.", "formula":"p · q = h²", "uses":["verhaeltnisgleichung"]}
+        ]
+      }],
+      "example": "Sind die Abschnitte 4 cm und 9 cm lang, gilt h² = 36 cm². Als Länge ist h positiv. Die Höhe misst also 6 cm.",
+      "sources": [{"label":"Euklid, Elemente VI.8 und Folgesatz", "url":"https://mathcs.clarku.edu/~djoyce/java/elements/bookVI/propVI8.html"}]
+    },
+    {
+      "id": "kathetensatz",
+      "kind": "Satz",
+      "title": "Kathetensatz",
+      "summary": "Das Quadrat jeder Kathete ist gleich dem Produkt aus der Hypotenuse und dem an dieser Kathete liegenden Hypotenusenabschnitt.",
+      "formula": ["a² = c · ", {"text":"p","ref":"hypotenusenhoehe"}, "     b² = c · ", {"text":"q","ref":"hypotenusenhoehe"}],
+      "figure": "dreieck-mit-hoehe",
+      "proofs": [{
+        "id": "aehnlichkeit",
+        "title": "Beweis durch ähnliche Dreiecke",
+        "steps": [
+          {"id":"abschnitte-zuordnen", "title":"Die Abschnitte zuordnen", "body":"Zeichne die Höhe CH. An der Kathete a = BC liegt p = BH. An der Kathete b = AC liegt q = AH.", "uses":["hypotenusenhoehe"]},
+          {"id":"dreiecke-vergleichen", "title":"Das große Dreieck mit jedem Teildreieck vergleichen", "body":"Aus ABC ∼ CBH folgen die entsprechenden Seitenverhältnisse c / a = a / p. Aus ABC ∼ ACH folgt auf demselben Weg c / b = b / q.", "uses":["aehnlichkeitslemma"]},
+          {"id":"produkte-bilden", "title":"Die Kathetenquadrate ablesen", "body":"Bilde in jeder Verhältnisgleichung die Kreuzprodukte. Daraus ergeben sich die beiden Aussagen für a und b.", "formula":"a² = c · p     b² = c · q", "uses":["verhaeltnisgleichung"]}
+        ]
+      }],
+      "example":"Für c = 5 cm und p = 3,2 cm gilt a² = 5 · 3,2 cm² = 16 cm². Die Kathete a ist 4 cm lang.",
+      "sources":[{"label":"Euklid, Elemente VI.8", "url":"https://mathcs.clarku.edu/~djoyce/java/elements/bookVI/propVI8.html"}]
+    },
+    {
+      "id":"aehnlichkeitslemma",
+      "kind":"Lemma",
+      "title":"Ähnlichkeitslemma",
+      "summary":"Die Höhe auf die Hypotenuse teilt ein rechtwinkliges Dreieck in zwei kleinere Dreiecke. Beide sind zum ursprünglichen Dreieck und deshalb auch zueinander ähnlich.",
+      "formula":["△ ABC ∼ △ ACH ∼ △ CBH"],
+      "figure":"dreieck-mit-hoehe",
+      "proofs":[{
+        "id":"winkel",
+        "title":"Beweis über die Winkel",
+        "steps":[
+          {"id":"rechte-winkel", "title":"Die rechten Winkel finden", "body":"Im großen Dreieck ist der Winkel bei C recht. In beiden Teildreiecken liegt der rechte Winkel bei H, weil CH senkrecht auf AB steht.", "uses":["hypotenusenhoehe"]},
+          {"id":"spitze-winkel", "title":"Je einen gemeinsamen spitzen Winkel finden", "body":"Das linke Teildreieck ACH teilt den Winkel bei A mit dem großen Dreieck. Das rechte Teildreieck CBH teilt den Winkel bei B mit ihm."},
+          {"id":"aehnlichkeit-folgern", "title":"Die entsprechenden Ecken ordnen", "body":"Je zwei übereinstimmende Winkel genügen für Ähnlichkeit. In der Formel stehen entsprechende Ecken an derselben Stelle. Daher kann man auch die Seitenverhältnisse der beiden kleinen Dreiecke gleichsetzen."}
+        ]
+      }],
+      "sources":[{"label":"Euklid, Elemente VI.8", "url":"https://mathcs.clarku.edu/~djoyce/java/elements/bookVI/propVI8.html"}]
+    },
+    {
+      "id":"hypotenusenhoehe",
+      "kind":"Begriff",
+      "title":"Höhe auf die Hypotenuse",
+      "summary":"Die Hypotenuse liegt dem rechten Winkel gegenüber. Das Lot vom Scheitel dieses Winkels trifft die Hypotenuse im Höhenfußpunkt H. Seine Länge heißt h.",
+      "formula":["CH ⟂ AB"],
+      "figure":"dreieck-mit-hoehe",
+      "notation":[["h","Höhe CH"],["p","Hypotenusenabschnitt BH an der Kathete a"],["q","Hypotenusenabschnitt AH an der Kathete b"],["c","Hypotenuse AB mit c = p + q"]],
+      "example":"Liegt H genau in der Mitte der Hypotenuse, sind p und q gleich lang. Die beiden Teildreiecke sind dann sogar kongruent."
+    },
+    {
+      "id":"verhaeltnisgleichung",
+      "kind":"Rechenregel",
+      "title":"Verhältnisgleichung",
+      "summary":"Zwei Verhältnisse sind gleich, wenn ihre Kreuzprodukte übereinstimmen. Die beiden Nenner müssen von null verschieden sein.",
+      "formula":["x / y = u / v   ⇔   x · v = y · u"],
+      "proofs":[{
+        "id":"umformen",
+        "title":"Herleitung durch Multiplikation",
+        "steps":[
+          {"id":"nenner-beseitigen","title":"Beide Seiten mit y · v multiplizieren","body":"Im linken Bruch kürzt sich y, im rechten v. Damit erhält man die Gleichung der beiden Produkte."},
+          {"id":"umkehren","title":"Die Rückrichtung prüfen","body":"Da y und v beide von null verschieden sind, darf man durch y · v teilen. So erhält man die ursprüngliche Verhältnisgleichung zurück."}
+        ]
+      }],
+      "example":"Aus 4 / 6 = 6 / 9 ergibt sich 4 · 9 = 6 · 6. Beide Produkte sind 36.",
+      "sources":[{"label":"Euklid, Elemente VI.16 (geometrische Fassung)", "url":"https://mathcs.clarku.edu/~djoyce/java/elements/bookVI/propVI16.html"}]
+    },
+    {
+      "id":"pythagoras",
+      "kind":"Satz",
+      "title":"Satz des Pythagoras",
+      "summary":"In jedem rechtwinkligen Dreieck ist die Summe der beiden Kathetenquadrate gleich dem Quadrat der Hypotenuse.",
+      "formula":["a² + b² = c²"],
+      "figure":"dreieck-mit-hoehe",
+      "proofs":[{
+        "id":"kathetenquadrate",
+        "title":"Beweis mit dem Kathetensatz",
+        "steps":[
+          {"id":"kathetensatz-anwenden","title":"Beide Kathetenquadrate ausdrücken","body":"Der Kathetensatz liefert a² = c · p und b² = c · q.", "uses":["kathetensatz"]},
+          {"id":"addieren","title":"Addieren und ausklammern","body":"Addiere beide Gleichungen. Die Abschnitte p und q bilden zusammen die ganze Hypotenuse c.", "formula":"a² + b² = c · (p + q) = c²", "uses":["hypotenusenhoehe"]}
+        ]
+      }],
+      "example":"Ein rechtwinkliges Dreieck mit Katheten von 3 cm und 4 cm hat eine 5 cm lange Hypotenuse. Denn 3² + 4² = 9 + 16 = 25 = 5².",
+      "sources":[{"label":"Euklid, Elemente I.47 (geometrischer Beweis)", "url":"https://mathcs.clarku.edu/~djoyce/java/elements/bookI/propI47.html"}]
+    }
+  ]
+}

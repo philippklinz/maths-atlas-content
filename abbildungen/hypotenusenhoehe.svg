@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 248" width="400" height="248" role="img" aria-labelledby="title desc">
+  <title id="title">Höhe auf die Hypotenuse</title>
+  <desc id="desc">ABC ist bei C rechtwinklig. Das Lot CH zerlegt c = AB in q = AH und p = HB.</desc>
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 H 0 V 20" fill="none" stroke="#d9e6e5" stroke-width=".65"/></pattern>
+  </defs>
+  <rect width="400" height="248" fill="#f1f7f6"/>
+  <rect width="400" height="248" fill="url(#grid)"/>
+  <path d="M45 180 153 36 153 180Z" fill="#d0ede7"/>
+  <path d="M153 36 345 180 153 180Z" fill="#e0e9ed"/>
+  <g fill="none" stroke="#19383e" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M45 180 153 36 345 180Z"/>
+    <path d="m145.8 45.6 9.6 7.2 7.2-9.6" stroke-width="1.4"/>
+    <path d="M153 180V36" stroke="#006b65" stroke-width="2.6" stroke-dasharray="5 3"/>
+    <path d="M153 168h12v12" stroke="#006b65" stroke-width="1.4"/>
+    <path d="M45 214v7m0-3h300m0-4v7" stroke="#6a8286" stroke-width="1"/>
+  </g>
+  <g fill="#17363b" font-family="Liberation Sans,Arial,sans-serif" font-size="16" text-anchor="middle">
+    <g font-weight="bold"><text x="36" y="197">A</text><text x="354" y="197">B</text><text x="153" y="26">C</text><text x="153" y="200">H</text></g>
+    <g font-family="Liberation Serif,Georgia,serif" font-style="italic" font-size="22"><text x="88" y="104">b</text><text x="263" y="107">a</text><text x="170" y="116" fill="#005e58">h</text><text x="98" y="200">q</text><text x="249" y="200">p</text><text x="195" y="239">c</text></g>
+  </g>
+  <g fill="#19383e"><circle cx="45" cy="180" r="3"/><circle cx="153" cy="36" r="3"/><circle cx="345" cy="180" r="3"/><circle cx="153" cy="180" r="3" fill="#006b65"/></g>
+</svg>
